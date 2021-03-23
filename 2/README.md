@@ -76,6 +76,10 @@ public class sqlTest {
     }
 }
 ```
+
+- Data  
+![](../png/sql_data.PNG)
+
 - Input  
 ```
 (10002, (1,2,3,4,5,6))
