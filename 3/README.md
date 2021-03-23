@@ -128,3 +128,6 @@ public class Drink {
     }
 }
 ```
+
+- Result  
+![](../png/cola_result.PNG)
