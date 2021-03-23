@@ -38,7 +38,7 @@ public class sqlTest {
     
     public static void main (String[] args) throws Exception {
         
-        InputData data = new InputData(10001, Arrays.asList("1", "2", "3", "4", "5", "6"));
+        InputData data = new InputData(10002, Arrays.asList("1", "2", "3", "4", "5", "6"));
         List<String> wid = new ArrayList<>(data.wid);
         try (Connection conn =getMySqlConnection();) {
                 // 直接從最新被更新的 wid 降冪排序
@@ -76,3 +76,10 @@ public class sqlTest {
     }
 }
 ```
+- Input  
+```
+(10002, (1,2,3,4,5,6))
+```
+
+- Result  
+![](../png/sql_result.PNG)
