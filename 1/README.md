@@ -2,10 +2,8 @@
 - 1-3  
 ```shell
 #/bin/bash
-var=$(ls | grep .py | wc -l)
-if [ $var -ne 0 ]; then
-       mv *.py tmp
-fi
+var=$(ls /data/WIN_SER/ | grep .csv | wc -l)
+mv $(ls /data/WIN_SER/ | grep .csv) /data/final/
 res="Move ${var} files."
 echo $res
 ```
