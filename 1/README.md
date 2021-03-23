@@ -2,8 +2,8 @@
 - 1-3  
 ```shell
 #/bin/bash
-var=$(ls /data/WIN_SER/ | grep .csv | wc -l)
-mv $(ls /data/WIN_SER/ | grep .csv) /data/final/
+var=$(find /data/WIN_SER/*.csv -type f | wc -l)
+mv $(find /data/WIN_SER/*.csv -type f) /data/final/
 res="Move ${var} files."
 echo $res
 ```
